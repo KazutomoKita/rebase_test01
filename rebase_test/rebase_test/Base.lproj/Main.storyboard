@@ -15,23 +15,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MFi-bG-laE">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FOALS" translatesAutoresizingMaskIntoConstraints="NO" id="MFi-bG-laE">
                                 <rect key="frame" x="87" y="60" width="240" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="MFi-bG-laE" secondAttribute="height" multiplier="1:1" id="XJK-jR-jcW"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26L-29-KG9">
+                                <rect key="frame" x="87" y="340" width="240" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="8PC-xx-S0i"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RD9-Rr-yzO">
+                                <rect key="frame" x="87" y="411" width="240" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="CkM-Yl-chc"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A3M-XO-5eK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="26L-29-KG9" firstAttribute="top" secondItem="MFi-bG-laE" secondAttribute="bottom" constant="40" id="1mF-j6-U1Z"/>
                             <constraint firstItem="MFi-bG-laE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="AND-Zc-75N"/>
+                            <constraint firstItem="RD9-Rr-yzO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="aZa-UL-EUv"/>
+                            <constraint firstItem="RD9-Rr-yzO" firstAttribute="top" secondItem="26L-29-KG9" secondAttribute="bottom" constant="50" id="ctv-xj-eMb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RD9-Rr-yzO" secondAttribute="trailing" constant="87" id="eef-L4-NJI"/>
+                            <constraint firstItem="26L-29-KG9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="hvz-Jm-p3w"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MFi-bG-laE" secondAttribute="trailing" constant="87" id="jAf-6b-zOE"/>
                             <constraint firstItem="MFi-bG-laE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="p40-Kp-Uik"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="26L-29-KG9" secondAttribute="trailing" constant="87" id="yi3-87-8wa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="button" destination="RD9-Rr-yzO" id="wnq-TP-ZZW"/>
                         <outlet property="imageView" destination="MFi-bG-laE" id="7pD-FK-WjB"/>
+                        <outlet property="label" destination="26L-29-KG9" id="i6p-Es-cra"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -39,4 +66,7 @@
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="FOALS" width="500" height="500"/>
+    </resources>
 </document>

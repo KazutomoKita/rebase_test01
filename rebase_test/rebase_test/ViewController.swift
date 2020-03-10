@@ -10,12 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var button: UIButton!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        label.text = "FOALS"
     }
 
     @IBAction func tappedButton(_ sender: Any) {
