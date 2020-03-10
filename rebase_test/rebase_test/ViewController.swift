@@ -20,14 +20,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func tappedButton(_ sender: Any) {
-        if label.text == "FOALS" {
-            imageView.image = UIImage(named: "Tame_Impala")
-            label.text = "Tame Impala"
-        } else {
-            imageView.image = UIImage(named: "FOALS")
-            label.text = "FOALS"
-        }
-        
+        imageView.image = UIImage(named: "Tame_Impala")
+        label.text = "Tame Impala"
     }
     
     
