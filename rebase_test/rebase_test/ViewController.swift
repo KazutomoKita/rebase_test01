@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var button: UIButton!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,11 +26,9 @@ class ViewController: UIViewController {
             label.text = "Tame Impala"
         } else {
             imageView.image = UIImage(named: "FOALS")
-            label.text = "FOALS/ HOLY FIRE"
+            label.text = "FOALS"
         }
         
     }
-    
-    
 }
 
