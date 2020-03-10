@@ -9,27 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
+
     
-    @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var label: UILabel!
-    @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var label1: UILabel!
+    @IBOutlet weak var label2: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        label.text = "FOALS"
+        // Do any additional setup after loading the view.
     }
 
-    @IBAction func tappedButton(_ sender: Any) {
-        if label.text == "FOALS" {
-            imageView.image = UIImage(named: "Tame_Impala")
-            label.text = "Tame Impala"
-        } else {
-            imageView.image = UIImage(named: "FOALS")
-            label.text = "FOALS/ HOLY FIRE"
-        }
-        
-    }
-    
-    
+
 }
 
