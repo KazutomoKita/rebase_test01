@@ -25,7 +25,7 @@ class ViewController: UIViewController {
             label.text = "Tame Impala"
         } else {
             imageView.image = UIImage(named: "FOALS")
-            label.text = "FOALS"
+            label.text = "FOALS/ HOLY FIRE"
         }
         
     }
